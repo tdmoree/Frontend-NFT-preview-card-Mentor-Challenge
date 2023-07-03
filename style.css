@@ -1,0 +1,127 @@
+:root {
+    --color-neutral: hsl(0, 0%, 100%);
+    --bgcolor-main: hsl(217, 54%, 11%);
+    --bgcolor-card: hsl(216, 50%, 16%);
+    --linecolor: hsl(215, 32%, 27%);
+    --color-primary: hsl(215, 51%, 70%);
+    --color-secondary: hsl(178, 100%, 50%);
+    --color-overlay: hsla(178, 100%, 50%, 0.616);
+}
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--bgcolor-main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "outfit", sans-serif ;
+}
+
+.main_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    background-color: var(--bgcolor-card);
+    width: 400px;
+    padding: 30px;
+    border: 5px solid var(--bgcolor-card);
+    border-radius: 1.5rem;
+}
+
+.overlay,
+.content img {
+    width: 330px;
+    height: 330px;
+    border-radius: 1rem;
+}
+
+.overlay{
+    position: absolute;
+    top: 55px;
+    left: 475px;
+    width: 330px;
+    height: 330px;   
+    z-index: 100;
+    cursor: pointer;
+}
+
+.overlay:hover{
+    background-position: center;
+    background-image:url(image/icon-view.svg);
+    background-repeat: no-repeat;
+    background-color: var(--color-overlay);
+}
+
+h1 {
+    color: var(--color-neutral);
+    font-size: 1.444rem;
+    margin-top: 0.85rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    color: var(--color-primary);
+    font-size: 1.195rem;
+}
+
+.divide {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.85rem;
+    margin-bottom: 0.95rem;
+    height: 2.5rem;
+    border-bottom: 1px solid var(--linecolor);
+}
+
+.user, img, p,
+.eth, img, h3,
+.days, img, p {
+    display: inline;
+    justify-content: space-between;
+}
+ 
+h3 {
+    color: var(--color-secondary);
+}
+
+.user img {
+    width: 25px;
+    height: 25px;
+    border: 1px solid var(--color-neutral);
+    border-radius: 30px;
+}
+
+span {
+    color: var(--color-neutral);
+}
+
+.you:hover { 
+    color: var(--color-secondary);
+    cursor: pointer;
+}
+
+/************Mobile********/
+@media screen and (max-width: 470px) {
+    .main_container {
+        margin: 100px;
+    }
+    .overlay,
+    .content img {
+        height: 430px;
+        left: 52px;
+        top: 135px;
+        width: 330px;   
+        cursor: pointer;
+    }
+}
