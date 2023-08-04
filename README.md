@@ -34,5 +34,4 @@
 ### Some HTML code I'm proud of:
 
 - CSS Nft hover
-  Top border line 
-- 
+ - Top border line 
