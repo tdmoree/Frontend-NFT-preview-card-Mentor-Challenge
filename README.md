@@ -3,7 +3,6 @@
 
 ![screenshot-desktop](https://github.com/tdmoree/Frontend-NFT-preview-card-Mentor-Challenge/assets/127156119/d6bfcced-b0db-4da7-a207-5535c4362d9f)
 
-![Interation comment section](/design/desktop-design.jpg)
 
 # The challenge
 
